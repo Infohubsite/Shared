@@ -2,7 +2,7 @@
 
 namespace Shared.DTO.Server
 {
-    public record EntityInstance
+    public record EntityInstanceDto
     {
         [JsonPropertyName("id")] public required Guid Id { get; init; }
         [JsonPropertyName("entityDefinitionId")] public required Guid EntityDefinitionId { get; init; }

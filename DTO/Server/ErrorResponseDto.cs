@@ -2,7 +2,7 @@
 
 namespace Shared.DTO.Server
 {
-    public record ErrorResponse
+    public record ErrorResponseDto
     {
         [JsonPropertyName("message")] public required string Message { get; init; }
     }

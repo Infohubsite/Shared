@@ -2,7 +2,7 @@
 
 namespace Shared.DTO.Client
 {
-    public record UpdateInstance
+    public record UpdateInstanceDto
     {
         [JsonPropertyName("data")] public Dictionary<string, object?> Data { get; init; } = [];
     }

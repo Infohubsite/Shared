@@ -2,9 +2,8 @@
 
 namespace Shared.DTO.Server
 {
-    public record B2Upload
+    public record LoginTokenDto
     {
         [JsonPropertyName("token")] public required string Token { get; init; }
-        [JsonPropertyName("url")] public required string Url { get; init; }
     }
 }
