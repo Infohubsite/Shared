@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace Shared.DTO.Server
 {
-    public record FieldDefinitionDto
+    public record FieldDefinition
     {
         [JsonPropertyName("id")] public required Guid Id { get; init; }
         [JsonPropertyName("name")] public required string Name { get; init; }
