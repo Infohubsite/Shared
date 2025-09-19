@@ -10,12 +10,17 @@
     
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Infohub.Shared</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Authors>Infohubsite</Authors>
     <Description>Contains the shared DTOs and Enums for the Infohub Frontend and Backend applications</Description>
     <RepositoryUrl>https://github.com/Infohubsite/Infohub.Shared.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>

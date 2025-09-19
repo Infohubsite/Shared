@@ -1,11 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace Shared.DTO.Client
 {
     public record LoginRequestDto
     {
-        [JsonPropertyName("username")][Required(ErrorMessage = "Username is required")] public required string Username { get; init; }
-        [JsonPropertyName("password")][Required(ErrorMessage = "Password is required")] public required string Password { get; init; }
+        [JsonPropertyName("username")] public required string Username { get; init; }
+        [JsonPropertyName("password")] public required string Password { get; init; }
     }
 }

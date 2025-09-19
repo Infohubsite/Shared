@@ -2,7 +2,7 @@
 
 namespace Shared.DTO.Server
 {
-    public record LoginTokenDto
+    public record LoginResponseDto
     {
         [JsonPropertyName("token")] public required string Token { get; init; }
     }
