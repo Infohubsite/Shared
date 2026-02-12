@@ -7,5 +7,6 @@ namespace Shared.DTO.Server
         [JsonPropertyName("id")] public required Guid Id { get; init; }
         [JsonPropertyName("entityDefinitionId")] public required Guid EntityDefinitionId { get; init; }
         [JsonPropertyName("data")] public Dictionary<string, object?> Data { get; init; } = [];
+        [JsonPropertyName("version")] public int Version { get; init; }
     }
 }
